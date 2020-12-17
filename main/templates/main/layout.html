@@ -1,0 +1,29 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css'%}">
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/les.png'%}" alt="Лого">
+        <span class="logo">Познай</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i>Главная</li></a>
+            <a href="{% url 'about' %}"><li><i class="fab fa-angellist"></i>О нас </li></a>
+            <a href="{% url 'recom_home' %}"><li><i class="fas fa-american-sign-language-interpreting"></i>Рекомендательная система </li></a>
+            <a href="{% url 'create' %}"><li><i class="fas fa-angle-double-right"></i>Узнать свою рекомендацию</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content%}
+        {% endblock %}
+    </main>
+</body>
+</html>

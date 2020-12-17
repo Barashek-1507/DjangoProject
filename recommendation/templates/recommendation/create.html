@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Форма для добавления новой рекомендации
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Узнайте подходите ли вы для профессии бухгалтера</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.name }}<br>
+            {{ form.surname }}<br>
+            {{ form.patronymic }}<br>
+            {{ form.age }}<br>
+            {{ form.education }}<br>
+            {{ form.diplom }}<br>
+            {{ form.experience }}<br>
+            {% include 'recommendation/test.html' %}
+            <span>{{ error }}</span>
+            {{ form.recommendation }}<br>
+
+            <button class="btn btn-outline-warning btn-lg btn-block" type="submit">Сохранить данные</button>
+        </form>
+    </div>
+{% endblock%}

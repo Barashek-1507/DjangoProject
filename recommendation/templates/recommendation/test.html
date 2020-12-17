@@ -1,0 +1,55 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="{% static 'main/js/test.js'%}"></script>
+</head>
+<body>
+<div>
+    <h3><b>Теперь педлагаем вам пройти тест и узнать, похдодите ли вы на эту должность.</b><br/><br/></h3>
+    <b>1)Выплата заработной платы работникам по пластиковым карточкам отражается записью:</b><br/>
+    <input type="radio" name="state" id='ans11' value="Дт70 Кт51"/><label for="ans11">Дт70 Кт51</label><br/>
+    <input type="radio" name="state" id='ans12' value="Дт55 Кт51, Дт70 Кт55"/><label for="ans12">Дт55 Кт51, Дт70
+    Кт55</label><br/>
+    <input type="radio" name="state" id='ans13' value="Дт70 Кт50-3"/><label for="ans13">Дт70 Кт50-3</label><br/><br/>
+    <b>2)Погашена часть превышения первоначальной стоимости облигаций над номинальной:</b><br/>
+    <input type="radio" name="state1" id='ans21' value="Дт58 Кт91"/><label for="ans21">Дт58 Кт91</label><br/>
+    <input type="radio" name="state1" id='ans22' value="Дт76 Кт58"/><label for="ans22">Дт76 Кт58</label><br/>
+    <input type="radio" name="state1" id='ans23' value="Дт91 Кт58"/><label for="ans23">Дт91
+    Кт58</label><br/><br/>
+    <b>3)Инвентарным объектом нематериальных активов признается:</b><br/>
+    <input type="radio" name="state2" id='ans31' value="совокупность прав1"/><label for="ans31">совокупность
+    прав,
+    вытекающих из патента, свидетельства и т.п., при условии их принадлежности одному владельцу</label><br/>
+    <input type="radio" name="state2" id='ans32' value="совокупность прав2"/><label for="ans32">совокупность
+    прав,
+    возникающих из одного патента, свидетельства и т.п., обеспечивающая выполнение им самостоятельной
+    функции</label><br/><br/>
+    <b>4)Бухгалтерская запись: Дт76 Кт91, Дт51 Кт76 может означать:</b><br/>
+    <input type="radio" name="state3" id='ans41' value="получение штрафов"/><label for="ans21">получение
+    штрафов, пени,
+    неустоек по хозяйственным договорам</label><br/>
+    <input type="radio" name="state3" id='ans42' value="уплату штрафов"/><label for="ans22">уплату штрафов, пени
+    за
+    нарушение налогового законодательства</label><br/>
+    <input type="radio" name="state3" id='ans43' value="зачисление"/><label for="ans23">зачисление на расчетный
+    счет
+    долгосрочных кредитов банка</label><br/><br/>
+    <b>5)В составе прочих доходов в бухгалтерском учете можно признать:</b><br/>
+    <input type="radio" name="state4" id='ans51' value="авансы"/><label for="ans21">авансы, полученные от
+    покупателей и
+    заказчиков</label><br/>
+    <input type="radio" name="state4" id='ans52' value="прибыль"/><label for="ans22">прибыль, полученную от
+    операций с
+    возвратной тарой</label><br/>
+    <input type="radio" name="state4" id='ans53' value="штрафы"/><label for="ans23">штрафы, пени, неустойки,
+    уплаченные за
+    нарушение условий договора</label><br/><br/>
+    <button type="button" class="btn btn-outline-warning btn-lg btn-block" onclick="Out()">Узнайте результаты теста
+    </button>
+    <br>
+    <h3 id="res">Результаты теста в процентах: </h3>
+    <br><h3>Рекомендации для вас</h3>
+</div>
+</body>
+</html>

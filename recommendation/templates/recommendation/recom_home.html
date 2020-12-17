@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Рекомендательная система
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Список недавних пользователей</h1><br>
+        {% for el in users %}
+            <div class="alert alert-warning">
+                <h3>{{el.surname}} {{el.name}} {{el.patronymic}} </h3>
+                <br>
+                <a href="{% url 'recommendation-details' el.id %}" class="btn btn-warning">Подробнее</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock%}

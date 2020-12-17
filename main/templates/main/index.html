@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+{% load static%}
+
+{% block title %}
+Главная страница
+{% endblock%}
+
+{% block content %}
+<p>
+    <img src="{% static 'main/img/обои-для-рабочего-стола-лес-21-600x448.jpg' %}" alt="" width="1150" height="600" border="30"
+  align="middle">
+</p>
+<br><br><br>
+<a href="http://127.0.0.1:8000/map" class="btn btn-outline-warning btn-lg btn-block">Карта города с предприятиями</a>
+{% endblock%}

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_0bec907acefe47339eb0408054e6c7d1 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_0bec907acefe47339eb0408054e6c7d1" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_0bec907acefe47339eb0408054e6c7d1 = L.map(
+        'map_0bec907acefe47339eb0408054e6c7d1', {
+        center: [55.798551, 49.106324],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_49ccb49e7715476da86a0f3f4cbf490d = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0bec907acefe47339eb0408054e6c7d1);
+    
+            var circle_marker_8d2b5bbdbc314ad9868b8f10b07bffee = L.circleMarker(
+                [55.83253970057373, 49.04976052360436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "red",
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_a1c162f0e9c743e1be89a0680536d672 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bd67534a5a5a4d2681223a9c9d5344a9 = $(`<div id="html_bd67534a5a5a4d2681223a9c9d5344a9" style="width: 100.0%; height: 100.0%;">Here</div>`)[0];
+                popup_a1c162f0e9c743e1be89a0680536d672.setContent(html_bd67534a5a5a4d2681223a9c9d5344a9);
+            
+
+            circle_marker_8d2b5bbdbc314ad9868b8f10b07bffee.bindPopup(popup_a1c162f0e9c743e1be89a0680536d672)
+            ;
+
+            
+        
+    
+            var circle_marker_de732f28f268414abd813a53313a6f71 = L.circleMarker(
+                [55.83253970057373, 49.04976052360436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_ab888301c51b4e77872fae2be5209e3b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6d2d9812a6b546e6b1541db841ad8815 = $(`<div id="html_6d2d9812a6b546e6b1541db841ad8815" style="width: 100.0%; height: 100.0%;">Here</div>`)[0];
+                popup_ab888301c51b4e77872fae2be5209e3b.setContent(html_6d2d9812a6b546e6b1541db841ad8815);
+            
+
+            circle_marker_de732f28f268414abd813a53313a6f71.bindPopup(popup_ab888301c51b4e77872fae2be5209e3b)
+            ;
+
+            
+        
+    
+            var circle_marker_aab3f29e6cc348318447de47246120be = L.circleMarker(
+                [55.83253970057373, 49.04976052360436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_3cec8b7677c240d5866b4ae95aaa10d1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_30e3178ea67e4705a858e8923cd98b81 = $(`<div id="html_30e3178ea67e4705a858e8923cd98b81" style="width: 100.0%; height: 100.0%;">Here</div>`)[0];
+                popup_3cec8b7677c240d5866b4ae95aaa10d1.setContent(html_30e3178ea67e4705a858e8923cd98b81);
+            
+
+            circle_marker_aab3f29e6cc348318447de47246120be.bindPopup(popup_3cec8b7677c240d5866b4ae95aaa10d1)
+            ;
+
+            
+        
+    
+            var circle_marker_290253b58d7244febd502f9806dc2b22 = L.circleMarker(
+                [55.83253970057373, 49.04976052360436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_d109183e001e43198070b327ce85e8de = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a85915e46e5f45b3b9f8f03eb5c71956 = $(`<div id="html_a85915e46e5f45b3b9f8f03eb5c71956" style="width: 100.0%; height: 100.0%;">ООО Группа компаний Энергощит, зарпалата 35 000-35 000 руб.</div>`)[0];
+                popup_d109183e001e43198070b327ce85e8de.setContent(html_a85915e46e5f45b3b9f8f03eb5c71956);
+            
+
+            circle_marker_290253b58d7244febd502f9806dc2b22.bindPopup(popup_d109183e001e43198070b327ce85e8de)
+            ;
+
+            
+        
+    
+            var circle_marker_ef58da6f0f304fbc8b0c132d4b0dea2c = L.circleMarker(
+                [55.81310890713355, 49.19671736962898],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_f1f48a4c4b284b788037330088b295b0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_600d58d903a7422bb232caf0c3b0e3b9 = $(`<div id="html_600d58d903a7422bb232caf0c3b0e3b9" style="width: 100.0%; height: 100.0%;">ООО Сфера, зарплата от 35 000 руб.</div>`)[0];
+                popup_f1f48a4c4b284b788037330088b295b0.setContent(html_600d58d903a7422bb232caf0c3b0e3b9);
+            
+
+            circle_marker_ef58da6f0f304fbc8b0c132d4b0dea2c.bindPopup(popup_f1f48a4c4b284b788037330088b295b0)
+            ;
+
+            
+        
+    
+            var circle_marker_f240d3415e1744cb9b998bdf40a25f76 = L.circleMarker(
+                [55.825821260079074, 49.12290087332566],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_a2dfecfd180a46e195f5a3f8180767d6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7995b96c9fab42a8b17d19cca3fa85c5 = $(`<div id="html_7995b96c9fab42a8b17d19cca3fa85c5" style="width: 100.0%; height: 100.0%;">ООО Сетка-Плюс, запрлата 46 000-46 000 руб.</div>`)[0];
+                popup_a2dfecfd180a46e195f5a3f8180767d6.setContent(html_7995b96c9fab42a8b17d19cca3fa85c5);
+            
+
+            circle_marker_f240d3415e1744cb9b998bdf40a25f76.bindPopup(popup_a2dfecfd180a46e195f5a3f8180767d6)
+            ;
+
+            
+        
+    
+            var circle_marker_463dc0b202bd413ca9a9d193204eb414 = L.circleMarker(
+                [55.835268205946626, 49.10231057517415],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_864bb5dbde3a4ba09498fd318a759a53 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_20805d49774141c181918a6e36ebfbaf = $(`<div id="html_20805d49774141c181918a6e36ebfbaf" style="width: 100.0%; height: 100.0%;">ООО Бухгалтер и Я, запрлата от 25 000 руб.</div>`)[0];
+                popup_864bb5dbde3a4ba09498fd318a759a53.setContent(html_20805d49774141c181918a6e36ebfbaf);
+            
+
+            circle_marker_463dc0b202bd413ca9a9d193204eb414.bindPopup(popup_864bb5dbde3a4ba09498fd318a759a53)
+            ;
+
+            
+        
+    
+            var circle_marker_e2f6264aa0d34571b27314352bbd12fb = L.circleMarker(
+                [55.724952780955945, 49.1883034426384],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_95b30318abaa4b1a97e45e0c5760862c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cd5d5c2256164b89bbb18e1f30294e66 = $(`<div id="html_cd5d5c2256164b89bbb18e1f30294e66" style="width: 100.0%; height: 100.0%;">ООО СК Авангардстрой, зарплата от 30 000 до 40 000 руб.</div>`)[0];
+                popup_95b30318abaa4b1a97e45e0c5760862c.setContent(html_cd5d5c2256164b89bbb18e1f30294e66);
+            
+
+            circle_marker_e2f6264aa0d34571b27314352bbd12fb.bindPopup(popup_95b30318abaa4b1a97e45e0c5760862c)
+            ;
+
+            
+        
+    
+            var circle_marker_600192d05cfe47cdb3f6c675a4b7be12 = L.circleMarker(
+                [55.81041994737756, 49.26657635428709],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_eeccc49c3ce648118f4a09bafae37181 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_55cf871f167a4f26a4a87ccd8d37db17 = $(`<div id="html_55cf871f167a4f26a4a87ccd8d37db17" style="width: 100.0%; height: 100.0%;">ООО Константа Строй, зарплата 60 000 руб.</div>`)[0];
+                popup_eeccc49c3ce648118f4a09bafae37181.setContent(html_55cf871f167a4f26a4a87ccd8d37db17);
+            
+
+            circle_marker_600192d05cfe47cdb3f6c675a4b7be12.bindPopup(popup_eeccc49c3ce648118f4a09bafae37181)
+            ;
+
+            
+        
+    
+            var circle_marker_e4bff5c8e8ed4d39a875023bfa4949e1 = L.circleMarker(
+                [55.83253970057373, 49.04976052360436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_7e96702fc1324134861858e590ce360d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eff692a38a074498a7794f24b0ec4f32 = $(`<div id="html_eff692a38a074498a7794f24b0ec4f32" style="width: 100.0%; height: 100.0%;">LLC Group of companies Energoschit, salary 35 000-35 000 руб.</div>`)[0];
+                popup_7e96702fc1324134861858e590ce360d.setContent(html_eff692a38a074498a7794f24b0ec4f32);
+            
+
+            circle_marker_e4bff5c8e8ed4d39a875023bfa4949e1.bindPopup(popup_7e96702fc1324134861858e590ce360d)
+            ;
+
+            
+        
+    
+            var circle_marker_726b0e0569e543a792a1b7841a23bf01 = L.circleMarker(
+                [55.81310890713355, 49.19671736962898],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_302d27bebab14dbab338034faf82e316 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_feaf10f7497e473db42c6bbb64055be8 = $(`<div id="html_feaf10f7497e473db42c6bbb64055be8" style="width: 100.0%; height: 100.0%;">Sphere LLC, salary from 35 000 руб.</div>`)[0];
+                popup_302d27bebab14dbab338034faf82e316.setContent(html_feaf10f7497e473db42c6bbb64055be8);
+            
+
+            circle_marker_726b0e0569e543a792a1b7841a23bf01.bindPopup(popup_302d27bebab14dbab338034faf82e316)
+            ;
+
+            
+        
+    
+            var circle_marker_aeb6b6406dbb4108896bf91fd061f7da = L.circleMarker(
+                [55.825821260079074, 49.12290087332566],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_3c64e78040624cfb85a79d886a0358a0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2cd8280d39194c7685ec076eb619a61a = $(`<div id="html_2cd8280d39194c7685ec076eb619a61a" style="width: 100.0%; height: 100.0%;">LLC Grid-Plus, salary 46 000-46 000 руб.</div>`)[0];
+                popup_3c64e78040624cfb85a79d886a0358a0.setContent(html_2cd8280d39194c7685ec076eb619a61a);
+            
+
+            circle_marker_aeb6b6406dbb4108896bf91fd061f7da.bindPopup(popup_3c64e78040624cfb85a79d886a0358a0)
+            ;
+
+            
+        
+    
+            var circle_marker_c33a19e541db4cc28edcba75f3f4b08a = L.circleMarker(
+                [55.835268205946626, 49.10231057517415],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_22f1821c27414255b25d8763bdc10d36 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_afb31292c9c5424ba34accab7932fe1c = $(`<div id="html_afb31292c9c5424ba34accab7932fe1c" style="width: 100.0%; height: 100.0%;">LLC Accountant and I, payment from 25 000 руб.</div>`)[0];
+                popup_22f1821c27414255b25d8763bdc10d36.setContent(html_afb31292c9c5424ba34accab7932fe1c);
+            
+
+            circle_marker_c33a19e541db4cc28edcba75f3f4b08a.bindPopup(popup_22f1821c27414255b25d8763bdc10d36)
+            ;
+
+            
+        
+    
+            var circle_marker_ea74f83b467f49b3b207e85ddd2f0c45 = L.circleMarker(
+                [55.724952780955945, 49.1883034426384],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_d06ba5375e7f4ec18bbb3a881cca7c4b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_39a4bd29e4db49e28266a961730bbe66 = $(`<div id="html_39a4bd29e4db49e28266a961730bbe66" style="width: 100.0%; height: 100.0%;">LLC SK Avangardstroy, salary from 30 000 до 40 000 руб.</div>`)[0];
+                popup_d06ba5375e7f4ec18bbb3a881cca7c4b.setContent(html_39a4bd29e4db49e28266a961730bbe66);
+            
+
+            circle_marker_ea74f83b467f49b3b207e85ddd2f0c45.bindPopup(popup_d06ba5375e7f4ec18bbb3a881cca7c4b)
+            ;
+
+            
+        
+    
+            var circle_marker_c36b61b4658f45e8931ba38b8fd0045f = L.circleMarker(
+                [55.81041994737756, 49.26657635428709],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_3e6e43fd6ed9445183d13e83d3c05833 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_719d971cf95e4a749d7cf8567b554e6c = $(`<div id="html_719d971cf95e4a749d7cf8567b554e6c" style="width: 100.0%; height: 100.0%;">LLC Constanta Stroy, salary 60 000 руб.</div>`)[0];
+                popup_3e6e43fd6ed9445183d13e83d3c05833.setContent(html_719d971cf95e4a749d7cf8567b554e6c);
+            
+
+            circle_marker_c36b61b4658f45e8931ba38b8fd0045f.bindPopup(popup_3e6e43fd6ed9445183d13e83d3c05833)
+            ;
+
+            
+        
+    
+            var circle_marker_40019f482b114b49bd6444b6de59139f = L.circleMarker(
+                [55.83253970057373, 49.04976052360436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_b7db3e871afb47d0a3e6a3cfe3c18a9e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_56b0b20aac5742e78eab7b34f56d4be1 = $(`<div id="html_56b0b20aac5742e78eab7b34f56d4be1" style="width: 100.0%; height: 100.0%;">LLC Group of companies Energoschit, salary 35 000-35 000</div>`)[0];
+                popup_b7db3e871afb47d0a3e6a3cfe3c18a9e.setContent(html_56b0b20aac5742e78eab7b34f56d4be1);
+            
+
+            circle_marker_40019f482b114b49bd6444b6de59139f.bindPopup(popup_b7db3e871afb47d0a3e6a3cfe3c18a9e)
+            ;
+
+            
+        
+    
+            var circle_marker_847a3d8748c049cb86c9ac4b19f70650 = L.circleMarker(
+                [55.81310890713355, 49.19671736962898],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_2cf02340b5e940a7bb8b6d8b954d878c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2210d92b82d9435db864fd54468b8a95 = $(`<div id="html_2210d92b82d9435db864fd54468b8a95" style="width: 100.0%; height: 100.0%;">Sphere LLC, salary from 35 000</div>`)[0];
+                popup_2cf02340b5e940a7bb8b6d8b954d878c.setContent(html_2210d92b82d9435db864fd54468b8a95);
+            
+
+            circle_marker_847a3d8748c049cb86c9ac4b19f70650.bindPopup(popup_2cf02340b5e940a7bb8b6d8b954d878c)
+            ;
+
+            
+        
+    
+            var circle_marker_ca4645179f554af88974b9e69a8f80b7 = L.circleMarker(
+                [55.825821260079074, 49.12290087332566],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_60f67b4d158d4151b50f626d9a3a88e9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9ae12e1e47e64da095ab41fd83c37b0d = $(`<div id="html_9ae12e1e47e64da095ab41fd83c37b0d" style="width: 100.0%; height: 100.0%;">LLC Grid-Plus, salary 46 000-46 000</div>`)[0];
+                popup_60f67b4d158d4151b50f626d9a3a88e9.setContent(html_9ae12e1e47e64da095ab41fd83c37b0d);
+            
+
+            circle_marker_ca4645179f554af88974b9e69a8f80b7.bindPopup(popup_60f67b4d158d4151b50f626d9a3a88e9)
+            ;
+
+            
+        
+    
+            var circle_marker_adb6b2be0f2343719dec414a210008e4 = L.circleMarker(
+                [55.835268205946626, 49.10231057517415],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_fbb3e2ded0924f4e8547163aead319b3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c0617a13bbe845b199f2ad26ee731565 = $(`<div id="html_c0617a13bbe845b199f2ad26ee731565" style="width: 100.0%; height: 100.0%;">LLC Accountant and I, payment from 25 000</div>`)[0];
+                popup_fbb3e2ded0924f4e8547163aead319b3.setContent(html_c0617a13bbe845b199f2ad26ee731565);
+            
+
+            circle_marker_adb6b2be0f2343719dec414a210008e4.bindPopup(popup_fbb3e2ded0924f4e8547163aead319b3)
+            ;
+
+            
+        
+    
+            var circle_marker_36eb897e51584195aec063d24ff926c0 = L.circleMarker(
+                [55.724952780955945, 49.1883034426384],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_8cc73087fbc7493c8a068e2b35ac8f4d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_06e1c8ad002546aebc54b6d009b0837e = $(`<div id="html_06e1c8ad002546aebc54b6d009b0837e" style="width: 100.0%; height: 100.0%;">LLC SK Avangardstroy, salary from 30 000 до 40 000</div>`)[0];
+                popup_8cc73087fbc7493c8a068e2b35ac8f4d.setContent(html_06e1c8ad002546aebc54b6d009b0837e);
+            
+
+            circle_marker_36eb897e51584195aec063d24ff926c0.bindPopup(popup_8cc73087fbc7493c8a068e2b35ac8f4d)
+            ;
+
+            
+        
+    
+            var circle_marker_02caa7c1e67d4c2f97ce771ff7f3b93b = L.circleMarker(
+                [55.81041994737756, 49.26657635428709],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_3c0511b3673c4c619da0ab555c532cd5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_75e4ab8699114ce38dd885af2dd6c017 = $(`<div id="html_75e4ab8699114ce38dd885af2dd6c017" style="width: 100.0%; height: 100.0%;">LLC Constanta Stroy, salary 60 000</div>`)[0];
+                popup_3c0511b3673c4c619da0ab555c532cd5.setContent(html_75e4ab8699114ce38dd885af2dd6c017);
+            
+
+            circle_marker_02caa7c1e67d4c2f97ce771ff7f3b93b.bindPopup(popup_3c0511b3673c4c619da0ab555c532cd5)
+            ;
+
+            
+        
+    
+            var circle_marker_02378c567b1d4b2eab28f2325fd87a48 = L.circleMarker(
+                [55.83253970057373, 49.04976052360436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_81eb8c8f588c4928be078e4f3676af8c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f003fc52c5a94320b5082746842caeac = $(`<div id="html_f003fc52c5a94320b5082746842caeac" style="width: 100.0%; height: 100.0%;">LLC Group of companies Energoschit, salary 35 000-35 000</div>`)[0];
+                popup_81eb8c8f588c4928be078e4f3676af8c.setContent(html_f003fc52c5a94320b5082746842caeac);
+            
+
+            circle_marker_02378c567b1d4b2eab28f2325fd87a48.bindPopup(popup_81eb8c8f588c4928be078e4f3676af8c)
+            ;
+
+            
+        
+    
+            var circle_marker_559919cd6b944e668faa62a3d480de99 = L.circleMarker(
+                [55.81310890713355, 49.19671736962898],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_87e8f743ae21450f80b8564afadf8c3e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cbed17e635da48569c1334ca734e17a1 = $(`<div id="html_cbed17e635da48569c1334ca734e17a1" style="width: 100.0%; height: 100.0%;">Sphere LLC, salary from 35 000</div>`)[0];
+                popup_87e8f743ae21450f80b8564afadf8c3e.setContent(html_cbed17e635da48569c1334ca734e17a1);
+            
+
+            circle_marker_559919cd6b944e668faa62a3d480de99.bindPopup(popup_87e8f743ae21450f80b8564afadf8c3e)
+            ;
+
+            
+        
+    
+            var circle_marker_f4a6afed1d524416a41236220d61f116 = L.circleMarker(
+                [55.825821260079074, 49.12290087332566],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_c3da06273686424799c3eed8e37422ec = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3386d237cbc04356addfe1033039b9b0 = $(`<div id="html_3386d237cbc04356addfe1033039b9b0" style="width: 100.0%; height: 100.0%;">LLC Grid-Plus, salary 46 000-46 000</div>`)[0];
+                popup_c3da06273686424799c3eed8e37422ec.setContent(html_3386d237cbc04356addfe1033039b9b0);
+            
+
+            circle_marker_f4a6afed1d524416a41236220d61f116.bindPopup(popup_c3da06273686424799c3eed8e37422ec)
+            ;
+
+            
+        
+    
+            var circle_marker_73ce520a9c984ef09be3d6f2b0042b64 = L.circleMarker(
+                [55.835268205946626, 49.10231057517415],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_a0c691ee9c06449280d1addcdb88f3cd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7d11470c45264931beae9ba7cdfc6e2d = $(`<div id="html_7d11470c45264931beae9ba7cdfc6e2d" style="width: 100.0%; height: 100.0%;">LLC Accountant and I, payment from 25 000</div>`)[0];
+                popup_a0c691ee9c06449280d1addcdb88f3cd.setContent(html_7d11470c45264931beae9ba7cdfc6e2d);
+            
+
+            circle_marker_73ce520a9c984ef09be3d6f2b0042b64.bindPopup(popup_a0c691ee9c06449280d1addcdb88f3cd)
+            ;
+
+            
+        
+    
+            var circle_marker_6ff2366cd64846c19195f4ec507d4a41 = L.circleMarker(
+                [55.724952780955945, 49.1883034426384],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_d3c65d73d7644ae2be84cd636d0dd65a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b85006d6d3b346edb1929510fcbfe06c = $(`<div id="html_b85006d6d3b346edb1929510fcbfe06c" style="width: 100.0%; height: 100.0%;">LLC SK Avangardstroy, salary from 30 000-40 000</div>`)[0];
+                popup_d3c65d73d7644ae2be84cd636d0dd65a.setContent(html_b85006d6d3b346edb1929510fcbfe06c);
+            
+
+            circle_marker_6ff2366cd64846c19195f4ec507d4a41.bindPopup(popup_d3c65d73d7644ae2be84cd636d0dd65a)
+            ;
+
+            
+        
+    
+            var circle_marker_eb94bbdd2638495ab4c398b5681d6e1d = L.circleMarker(
+                [55.81041994737756, 49.26657635428709],
+                {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": "green",
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_0bec907acefe47339eb0408054e6c7d1);
+            
+    
+            var popup_de0041f851674a21b7a3164b16aef5ce = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8c9fc382a81b4f12ae433dc591cabd22 = $(`<div id="html_8c9fc382a81b4f12ae433dc591cabd22" style="width: 100.0%; height: 100.0%;">LLC Constanta Stroy, salary 60 000</div>`)[0];
+                popup_de0041f851674a21b7a3164b16aef5ce.setContent(html_8c9fc382a81b4f12ae433dc591cabd22);
+            
+
+            circle_marker_eb94bbdd2638495ab4c398b5681d6e1d.bindPopup(popup_de0041f851674a21b7a3164b16aef5ce)
+            ;
+
+            
+        
+</script>

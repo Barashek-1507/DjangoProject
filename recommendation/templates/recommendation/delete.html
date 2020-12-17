@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Удаление данных
+{% endblock%}
+
+{% block content %}
+<div class="features">
+    <h1>Это действие необратимо, вы действительно хотите удалить данные?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button class="btn btn-outline-danger btn-lg btn-block">Удалить данные</button>
+        <a href="{% url 'recom_home'%}" class="btn btn-outline-success btn-lg btn-block">Оставить данные</a>
+    </form>
+</div>
+{% endblock%}

@@ -1,0 +1,111 @@
+body{
+    background: #FFE4C4;
+}
+
+aside{
+    float: left;
+    background: #FCDD76;
+    width: 20%;
+    padding: 2.5%;
+    height: 250vh;
+    color: #808080;
+    border-right: 4px solid #F5F5DC;
+}
+
+aside img {
+    width: 90px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 23px;
+}
+
+aside h3{
+    margin-top: 80px;
+    position: relative;
+    left: 18px;
+    font-size: 26px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    color: #808080;
+    display: block;
+    margin-top: 10px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #F5F5DC;
+    text-decoration: none;
+    transform: scale(1.10);
+}
+
+main .features {
+    float: left;
+    color: #856404;
+    margin-top: 100px;
+    width: 35%;
+}
+
+main .features img {
+    margin-left: 400px;
+    width: 326px;
+    height: 490px;
+    border-radius: 50%;
+}
+
+main .features h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 200px;
+    width: 150%;
+}
+
+main .features h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 200px;
+    width: 150%;
+}
+
+main .features p {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+main .features input {
+    background-color: #fff3cd;
+    border-color: #856404;
+}
+
+main .features select {
+    background-color: #fff3cd;
+    border-color: #856404;
+}
+
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #856404;
+    float: left;
+    clear: both;
+    width: 800px;
+    margin: 20px 34%;
+    text-align: center;
+}
+
+form {
+    margin-left: 32%;
+    width: 800px;
+    margin-top: 50px;
+}

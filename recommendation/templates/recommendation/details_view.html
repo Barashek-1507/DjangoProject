@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Рекомендательная система
+{% endblock %}
+
+{% block content %}
+<div class="features">
+    <div class="alert alert-warning">
+        <h3>{{ recommendation.surname}} {{ recommendation.name}} {{ recommendation.patronymic}}</h3>
+        <p>Ваш возраст: {{ recommendation.age }}</p>
+        <p>Ваш диплом: {{ recommendation.diplom }}</p>
+        <p>Ваше образование: {{ recommendation.education }}</p>
+        <p>Ваш стаж работы: {{ recommendation.experience }}</p>
+        <p>Ваши рекомендации: {{ recommendation.recommendation }}</p>
+        <br>
+        <a href="{% url 'recommendation-update' recommendation.id %}" class="btn btn-success">Редактировать</a>
+        <a href="{% url 'recommendation-delete' recommendation.id %}" class="btn btn-danger">Удалить</a>
+    </div>
+</div>
+{% endblock%}
